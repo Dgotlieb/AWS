@@ -2,6 +2,10 @@ import json
 import boto3
 import datetime
 
+# event contains contains information from the invoking service
+# context provides methods and properties that provide information about the invocation 
+# Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python 
+
 def lambda_handler(event, context):
     string = "Hello Lambda"
     encoded_string = string.encode("utf-8")
